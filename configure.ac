@@ -769,6 +769,10 @@ if test x$use_reduce_exports = xyes; then
 fi
 fi
 
+
+AC_CHECK_HEADER([sqlite3.h],,AC_MSG_ERROR(sqlite3 headers missing))
+AC_CHECK_LIB([sqlite3],      [sqlite3_open],SQLITE3_LIBS=-lsqlite3, AC_MSG_ERROR(libsqlite3 missing))
+
 if test x$use_reduce_exports = xyes; then
     CXXFLAGS="$CXXFLAGS $RE_CXXFLAGS"
     AX_CHECK_LINK_FLAG([[-Wl,--exclude-libs,ALL]], [RELDFLAGS="-Wl,--exclude-libs,ALL"])
