@@ -40,4 +40,4 @@ static void RollingBloom(benchmark::State& state)
     }
 }
 
-BENCHMARK(RollingBloom);
+//BENCHMARK(RollingBloom);

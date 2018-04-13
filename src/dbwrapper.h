@@ -176,7 +176,7 @@ public:
 class CDBWrapper
 {
     friend const std::vector<unsigned char>& dbwrapper_private::GetObfuscateKey(const CDBWrapper &w);
-private:
+public:
     //! custom environment this database is using (may be nullptr in case of default environment)
     leveldb::Env* penv;
 
