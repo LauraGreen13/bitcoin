@@ -17,8 +17,9 @@ main(int argc, char** argv)
     RandomInit();
     ECC_Start();
     SetupEnvironment();
-    fPrintToDebugLog = false; // don't want to write to debug.log file
+    fPrintToDebugLog = true; // don't want to write to debug.log file
 
+    gArgs.ParseParameters(argc, argv);
     benchmark::BenchRunner::RunAll();
 
     ECC_Stop();
