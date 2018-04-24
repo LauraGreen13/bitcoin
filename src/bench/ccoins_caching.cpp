@@ -7,7 +7,6 @@
 #include "policy/policy.h"
 #include "validation.h"
 #include "wallet/crypter.h"
-#include "txdb.h"
 #include "consensus/validation.h"
 #include "primitives/transaction.h"
 #include "txmempool.h"
@@ -114,40 +113,43 @@ static void CCoinsCaching(benchmark::State& state)
 
 	AppInitMain(threadGroup, scheduler);
 
-	if (pcoinsTip != nullptr) {
-		std::cout << "db view size: " << pcoinsdbview->EstimateSize() << "\n\n\n\n\n";
-
-		int cnt = 0;
-		std::unique_ptr<CDBIterator> it(new CDBIterator(pcoinsdbview->db, pcoinsdbview->db.pdb->NewIterator(pcoinsdbview->db.iteroptions)));
-		for (it->SeekToFirst(); it->Valid(); it->Next()) {
-			cnt++;
-		}
-
-		std::cout << "number of entries in database: " << cnt << "\n\n\n\n\n";
-		std::cout << "best block is null?: " << pcoinsdbview->GetBestBlock().IsNull() << "\n\n\n\n\n";
-		std::cout << "cache size: " << pcoinsTip->GetCacheSize() << "\n\n\n\n\n";
-	} else {
-		std::cout << "SHIT\n\n\n\n";
-	}
+//	std::cout << "size of coin: " << sizeof(Coin) << "\n";
+//	std::cout << "size of COutPoint: " << sizeof(COutPoint) << "\n";
+//	std::cout << "size of CCoinsCacheEntry: " << sizeof(CCoinsCacheEntry) << "\n";
 
 	CBasicKeyStore keystore;
 
 	int txNo = 2;
-	int maxUtxo = 500;
+
+
+
+//	int max = gArgs.GetArg("-utxo_no", 100);
+//
+//
+//	std::cout << max << "haaaaaaaaaaa\n\n\n\n";
+
+	int maxUtxo = gArgs.GetArg("-utxo_no", 100);
 
 	//
 	int utxoNo = 7;
 	int maxTx = 100;
 
-	std::cout << "number of transactions: " << txNo << "\n";
+//	std::cout << "number of transactions: " << txNo << "\n";
 
-	for (int k = 20; k < maxUtxo; k+=10) {
+	int k = maxUtxo;
+//	for (int k = 0; k < maxUtxo; k+=10) {
 		std::vector<CMutableTransaction> dummyTransactions = SetupDummyInputs(keystore, *pcoinsTip, txNo, k);
 
-		std::cout << "number of utxo per transaction: " << k << "\n";
+		std::cout << "utxo_no per transaction: " << k << "\n";
 		int dummySize = dummyTransactions.size();
 		std::vector<CMutableTransaction> transactions;
 		transactions.resize(dummySize);
+
+
+		//write everything to database to bypass the cache
+		//Uncomment this to benchmark the access to database
+//		pcoinsTip->Flush();
+
 
 		//for each dummy transaction create a transaction that takes the coins from the dummy tx i and i-1 and
 		//puts them in 3 different outputs
@@ -187,9 +189,6 @@ static void CCoinsCaching(benchmark::State& state)
 
 //		}
 
-		//write everything to database to bypass the cache
-		//Uncomment this to benchmark the access to database
-		pcoinsTip->Flush();
 
 		// Benchmark.
 //		int i = 1;
@@ -203,8 +202,8 @@ static void CCoinsCaching(benchmark::State& state)
 //				bool has = pcoinsTip->HaveCoinInCache(t1.vin[var].prevout);
 //				assert(has == 1);
 //			}
-
-			CAmount value = pcoinsTip->GetValueIn(t1);
+			pcoinsTip->Flush();
+//			CAmount value = pcoinsTip->GetValueIn(t1);
 
 		}
 		}
@@ -212,7 +211,7 @@ static void CCoinsCaching(benchmark::State& state)
 
 		//need to clear cache
 //			pcoinsTip->Flush();
-	}
+//	}
 }
 
 BENCHMARK(CCoinsCaching);

@@ -126,4 +126,3 @@ plt.title("NO Cache Flush")
 
 fig.savefig(output)
 
-
