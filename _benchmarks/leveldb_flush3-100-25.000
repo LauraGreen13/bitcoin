@@ -1,0 +1,506 @@
+utxo_no per transaction: 100
+CCoinsCaching,cpu_cycles,716664
+utxo_no per transaction: 200
+CCoinsCaching,cpu_cycles,960584
+utxo_no per transaction: 300
+CCoinsCaching,cpu_cycles,1542920
+utxo_no per transaction: 400
+CCoinsCaching,cpu_cycles,2210054
+utxo_no per transaction: 500
+CCoinsCaching,cpu_cycles,2450696
+utxo_no per transaction: 600
+CCoinsCaching,cpu_cycles,3151692
+utxo_no per transaction: 700
+CCoinsCaching,cpu_cycles,3534878
+utxo_no per transaction: 800
+CCoinsCaching,cpu_cycles,4107956
+utxo_no per transaction: 900
+CCoinsCaching,cpu_cycles,4889222
+utxo_no per transaction: 1000
+CCoinsCaching,cpu_cycles,5210482
+utxo_no per transaction: 1100
+CCoinsCaching,cpu_cycles,5706100
+utxo_no per transaction: 1200
+CCoinsCaching,cpu_cycles,6522838
+utxo_no per transaction: 1300
+CCoinsCaching,cpu_cycles,6900246
+utxo_no per transaction: 1400
+CCoinsCaching,cpu_cycles,7746238
+utxo_no per transaction: 1500
+CCoinsCaching,cpu_cycles,8009846
+utxo_no per transaction: 1600
+CCoinsCaching,cpu_cycles,8545742
+utxo_no per transaction: 1700
+CCoinsCaching,cpu_cycles,9166512
+utxo_no per transaction: 1800
+CCoinsCaching,cpu_cycles,9254924
+utxo_no per transaction: 1900
+CCoinsCaching,cpu_cycles,10274334
+utxo_no per transaction: 2000
+CCoinsCaching,cpu_cycles,10668798
+utxo_no per transaction: 2100
+CCoinsCaching,cpu_cycles,11254364
+utxo_no per transaction: 2200
+CCoinsCaching,cpu_cycles,11774022
+utxo_no per transaction: 2300
+CCoinsCaching,cpu_cycles,12818140
+utxo_no per transaction: 2400
+CCoinsCaching,cpu_cycles,13409456
+utxo_no per transaction: 2500
+CCoinsCaching,cpu_cycles,13702700
+utxo_no per transaction: 2600
+CCoinsCaching,cpu_cycles,14219538
+utxo_no per transaction: 2700
+CCoinsCaching,cpu_cycles,14995098
+utxo_no per transaction: 2800
+CCoinsCaching,cpu_cycles,15446212
+utxo_no per transaction: 2900
+CCoinsCaching,cpu_cycles,16750032
+utxo_no per transaction: 3000
+CCoinsCaching,cpu_cycles,16407872
+utxo_no per transaction: 3100
+CCoinsCaching,cpu_cycles,17806472
+utxo_no per transaction: 3200
+CCoinsCaching,cpu_cycles,17875394
+utxo_no per transaction: 3300
+CCoinsCaching,cpu_cycles,18476842
+utxo_no per transaction: 3400
+CCoinsCaching,cpu_cycles,18808722
+utxo_no per transaction: 3500
+CCoinsCaching,cpu_cycles,18935358
+utxo_no per transaction: 3600
+CCoinsCaching,cpu_cycles,19638876
+utxo_no per transaction: 3700
+CCoinsCaching,cpu_cycles,20304780
+utxo_no per transaction: 3800
+CCoinsCaching,cpu_cycles,22598132
+utxo_no per transaction: 3900
+CCoinsCaching,cpu_cycles,21999002
+utxo_no per transaction: 4000
+CCoinsCaching,cpu_cycles,31641808
+utxo_no per transaction: 4100
+CCoinsCaching,cpu_cycles,24106260
+utxo_no per transaction: 4200
+CCoinsCaching,cpu_cycles,24334378
+utxo_no per transaction: 4300
+CCoinsCaching,cpu_cycles,25009076
+utxo_no per transaction: 4400
+CCoinsCaching,cpu_cycles,25891874
+utxo_no per transaction: 4500
+CCoinsCaching,cpu_cycles,26342412
+utxo_no per transaction: 4600
+CCoinsCaching,cpu_cycles,26840128
+utxo_no per transaction: 4700
+CCoinsCaching,cpu_cycles,27029194
+utxo_no per transaction: 4800
+CCoinsCaching,cpu_cycles,28338242
+utxo_no per transaction: 4900
+CCoinsCaching,cpu_cycles,30090852
+utxo_no per transaction: 5000
+CCoinsCaching,cpu_cycles,29620446
+utxo_no per transaction: 5100
+CCoinsCaching,cpu_cycles,30320938
+utxo_no per transaction: 5200
+CCoinsCaching,cpu_cycles,31849734
+utxo_no per transaction: 5300
+CCoinsCaching,cpu_cycles,31150594
+utxo_no per transaction: 5400
+CCoinsCaching,cpu_cycles,31834224
+utxo_no per transaction: 5500
+CCoinsCaching,cpu_cycles,34135866
+utxo_no per transaction: 5600
+CCoinsCaching,cpu_cycles,32501808
+utxo_no per transaction: 5700
+CCoinsCaching,cpu_cycles,33545548
+utxo_no per transaction: 5800
+CCoinsCaching,cpu_cycles,35824940
+utxo_no per transaction: 5900
+CCoinsCaching,cpu_cycles,35920412
+utxo_no per transaction: 6000
+CCoinsCaching,cpu_cycles,36467296
+utxo_no per transaction: 6100
+CCoinsCaching,cpu_cycles,36795072
+utxo_no per transaction: 6200
+CCoinsCaching,cpu_cycles,36417382
+utxo_no per transaction: 6300
+CCoinsCaching,cpu_cycles,37707736
+utxo_no per transaction: 6400
+CCoinsCaching,cpu_cycles,38542668
+utxo_no per transaction: 6500
+CCoinsCaching,cpu_cycles,40484968
+utxo_no per transaction: 6600
+CCoinsCaching,cpu_cycles,40937982
+utxo_no per transaction: 6700
+CCoinsCaching,cpu_cycles,39737562
+utxo_no per transaction: 6800
+CCoinsCaching,cpu_cycles,40906576
+utxo_no per transaction: 6900
+CCoinsCaching,cpu_cycles,42071894
+utxo_no per transaction: 7000
+CCoinsCaching,cpu_cycles,44411844
+utxo_no per transaction: 7100
+CCoinsCaching,cpu_cycles,42305704
+utxo_no per transaction: 7200
+CCoinsCaching,cpu_cycles,43060918
+utxo_no per transaction: 7300
+CCoinsCaching,cpu_cycles,43412684
+utxo_no per transaction: 7400
+CCoinsCaching,cpu_cycles,44356388
+utxo_no per transaction: 7500
+CCoinsCaching,cpu_cycles,45398534
+utxo_no per transaction: 7600
+CCoinsCaching,cpu_cycles,48345958
+utxo_no per transaction: 7700
+CCoinsCaching,cpu_cycles,49422282
+utxo_no per transaction: 7800
+CCoinsCaching,cpu_cycles,50452422
+utxo_no per transaction: 7900
+CCoinsCaching,cpu_cycles,50797884
+utxo_no per transaction: 8000
+CCoinsCaching,cpu_cycles,51170640
+utxo_no per transaction: 8100
+CCoinsCaching,cpu_cycles,51639154
+utxo_no per transaction: 8200
+CCoinsCaching,cpu_cycles,52321666
+utxo_no per transaction: 8300
+CCoinsCaching,cpu_cycles,52070036
+utxo_no per transaction: 8400
+CCoinsCaching,cpu_cycles,63307188
+utxo_no per transaction: 8500
+CCoinsCaching,cpu_cycles,64218852
+utxo_no per transaction: 8600
+CCoinsCaching,cpu_cycles,54265318
+utxo_no per transaction: 8700
+CCoinsCaching,cpu_cycles,57489412
+utxo_no per transaction: 8800
+CCoinsCaching,cpu_cycles,56188804
+utxo_no per transaction: 8900
+CCoinsCaching,cpu_cycles,59319208
+utxo_no per transaction: 9000
+CCoinsCaching,cpu_cycles,58904176
+utxo_no per transaction: 9100
+CCoinsCaching,cpu_cycles,58062190
+utxo_no per transaction: 9200
+CCoinsCaching,cpu_cycles,61651222
+utxo_no per transaction: 9300
+CCoinsCaching,cpu_cycles,58719836
+utxo_no per transaction: 9400
+CCoinsCaching,cpu_cycles,59375604
+utxo_no per transaction: 9500
+CCoinsCaching,cpu_cycles,61626352
+utxo_no per transaction: 9600
+CCoinsCaching,cpu_cycles,62421648
+utxo_no per transaction: 9700
+CCoinsCaching,cpu_cycles,62123960
+utxo_no per transaction: 9800
+CCoinsCaching,cpu_cycles,62410514
+utxo_no per transaction: 9900
+CCoinsCaching,cpu_cycles,66467168
+utxo_no per transaction: 10000
+CCoinsCaching,cpu_cycles,64344360
+utxo_no per transaction: 10100
+CCoinsCaching,cpu_cycles,65831866
+utxo_no per transaction: 10200
+CCoinsCaching,cpu_cycles,67058828
+utxo_no per transaction: 10300
+CCoinsCaching,cpu_cycles,65926576
+utxo_no per transaction: 10400
+CCoinsCaching,cpu_cycles,67569366
+utxo_no per transaction: 10500
+CCoinsCaching,cpu_cycles,67613880
+utxo_no per transaction: 10600
+CCoinsCaching,cpu_cycles,68507370
+utxo_no per transaction: 10700
+CCoinsCaching,cpu_cycles,69350172
+utxo_no per transaction: 10800
+CCoinsCaching,cpu_cycles,70462318
+utxo_no per transaction: 10900
+CCoinsCaching,cpu_cycles,69541170
+utxo_no per transaction: 11000
+CCoinsCaching,cpu_cycles,68944978
+utxo_no per transaction: 11100
+CCoinsCaching,cpu_cycles,94171918
+utxo_no per transaction: 11200
+CCoinsCaching,cpu_cycles,73106726
+utxo_no per transaction: 11300
+CCoinsCaching,cpu_cycles,72675806
+utxo_no per transaction: 11400
+CCoinsCaching,cpu_cycles,74398218
+utxo_no per transaction: 11500
+CCoinsCaching,cpu_cycles,75961770
+utxo_no per transaction: 11600
+CCoinsCaching,cpu_cycles,102004380
+utxo_no per transaction: 11700
+CCoinsCaching,cpu_cycles,92161646
+utxo_no per transaction: 11800
+CCoinsCaching,cpu_cycles,90282900
+utxo_no per transaction: 11900
+CCoinsCaching,cpu_cycles,80053340
+utxo_no per transaction: 12000
+CCoinsCaching,cpu_cycles,81767096
+utxo_no per transaction: 12100
+CCoinsCaching,cpu_cycles,96496200
+utxo_no per transaction: 12200
+CCoinsCaching,cpu_cycles,80395974
+utxo_no per transaction: 12300
+CCoinsCaching,cpu_cycles,115268638
+utxo_no per transaction: 12400
+CCoinsCaching,cpu_cycles,79605484
+utxo_no per transaction: 12500
+CCoinsCaching,cpu_cycles,82724138
+utxo_no per transaction: 12600
+CCoinsCaching,cpu_cycles,80625588
+utxo_no per transaction: 12700
+CCoinsCaching,cpu_cycles,82653740
+utxo_no per transaction: 12800
+CCoinsCaching,cpu_cycles,84627214
+utxo_no per transaction: 12900
+CCoinsCaching,cpu_cycles,83486316
+utxo_no per transaction: 13000
+CCoinsCaching,cpu_cycles,85599492
+utxo_no per transaction: 13100
+CCoinsCaching,cpu_cycles,86989886
+utxo_no per transaction: 13200
+CCoinsCaching,cpu_cycles,91494696
+utxo_no per transaction: 13300
+CCoinsCaching,cpu_cycles,85337010
+utxo_no per transaction: 13400
+CCoinsCaching,cpu_cycles,88685322
+utxo_no per transaction: 13500
+CCoinsCaching,cpu_cycles,88592886
+utxo_no per transaction: 13600
+CCoinsCaching,cpu_cycles,106700672
+utxo_no per transaction: 13700
+CCoinsCaching,cpu_cycles,113417392
+utxo_no per transaction: 13800
+CCoinsCaching,cpu_cycles,90932824
+utxo_no per transaction: 13900
+CCoinsCaching,cpu_cycles,108803512
+utxo_no per transaction: 14000
+CCoinsCaching,cpu_cycles,108831806
+utxo_no per transaction: 14100
+CCoinsCaching,cpu_cycles,92316020
+utxo_no per transaction: 14200
+CCoinsCaching,cpu_cycles,93899024
+utxo_no per transaction: 14300
+CCoinsCaching,cpu_cycles,112597428
+utxo_no per transaction: 14400
+CCoinsCaching,cpu_cycles,98368884
+utxo_no per transaction: 14500
+CCoinsCaching,cpu_cycles,117177612
+utxo_no per transaction: 14600
+CCoinsCaching,cpu_cycles,131256054
+utxo_no per transaction: 14700
+CCoinsCaching,cpu_cycles,149859410
+utxo_no per transaction: 14800
+CCoinsCaching,cpu_cycles,101914774
+utxo_no per transaction: 14900
+CCoinsCaching,cpu_cycles,105338958
+utxo_no per transaction: 15000
+CCoinsCaching,cpu_cycles,98647536
+utxo_no per transaction: 15100
+CCoinsCaching,cpu_cycles,128326822
+utxo_no per transaction: 15200
+CCoinsCaching,cpu_cycles,101742604
+utxo_no per transaction: 15300
+CCoinsCaching,cpu_cycles,131825970
+utxo_no per transaction: 15400
+CCoinsCaching,cpu_cycles,140112316
+utxo_no per transaction: 15500
+CCoinsCaching,cpu_cycles,142066528
+utxo_no per transaction: 15600
+CCoinsCaching,cpu_cycles,110596876
+utxo_no per transaction: 15700
+CCoinsCaching,cpu_cycles,112843470
+utxo_no per transaction: 15800
+CCoinsCaching,cpu_cycles,112165744
+utxo_no per transaction: 15900
+CCoinsCaching,cpu_cycles,112074650
+utxo_no per transaction: 16000
+CCoinsCaching,cpu_cycles,113232782
+utxo_no per transaction: 16100
+CCoinsCaching,cpu_cycles,114782948
+utxo_no per transaction: 16200
+CCoinsCaching,cpu_cycles,116126216
+utxo_no per transaction: 16300
+CCoinsCaching,cpu_cycles,113772778
+utxo_no per transaction: 16400
+CCoinsCaching,cpu_cycles,115380380
+utxo_no per transaction: 16500
+CCoinsCaching,cpu_cycles,117532786
+utxo_no per transaction: 16600
+CCoinsCaching,cpu_cycles,122013722
+utxo_no per transaction: 16700
+CCoinsCaching,cpu_cycles,120815398
+utxo_no per transaction: 16800
+CCoinsCaching,cpu_cycles,121681920
+utxo_no per transaction: 16900
+CCoinsCaching,cpu_cycles,124925530
+utxo_no per transaction: 17000
+CCoinsCaching,cpu_cycles,125127162
+utxo_no per transaction: 17100
+CCoinsCaching,cpu_cycles,122211838
+utxo_no per transaction: 17200
+CCoinsCaching,cpu_cycles,123315988
+utxo_no per transaction: 17300
+CCoinsCaching,cpu_cycles,124075680
+utxo_no per transaction: 17400
+CCoinsCaching,cpu_cycles,124710776
+utxo_no per transaction: 17500
+CCoinsCaching,cpu_cycles,131536306
+utxo_no per transaction: 17600
+CCoinsCaching,cpu_cycles,218534834
+utxo_no per transaction: 17700
+CCoinsCaching,cpu_cycles,128209826
+utxo_no per transaction: 17800
+CCoinsCaching,cpu_cycles,126284412
+utxo_no per transaction: 17900
+CCoinsCaching,cpu_cycles,128614318
+utxo_no per transaction: 18000
+CCoinsCaching,cpu_cycles,133230960
+utxo_no per transaction: 18100
+CCoinsCaching,cpu_cycles,157771188
+utxo_no per transaction: 18200
+CCoinsCaching,cpu_cycles,166423096
+utxo_no per transaction: 18300
+CCoinsCaching,cpu_cycles,176497760
+utxo_no per transaction: 18400
+CCoinsCaching,cpu_cycles,144487714
+utxo_no per transaction: 18500
+CCoinsCaching,cpu_cycles,136523732
+utxo_no per transaction: 18600
+CCoinsCaching,cpu_cycles,134948552
+utxo_no per transaction: 18700
+CCoinsCaching,cpu_cycles,136191040
+utxo_no per transaction: 18800
+CCoinsCaching,cpu_cycles,173660666
+utxo_no per transaction: 18900
+CCoinsCaching,cpu_cycles,141217532
+utxo_no per transaction: 19000
+CCoinsCaching,cpu_cycles,142861150
+utxo_no per transaction: 19100
+CCoinsCaching,cpu_cycles,142817194
+utxo_no per transaction: 19200
+CCoinsCaching,cpu_cycles,143961020
+utxo_no per transaction: 19300
+CCoinsCaching,cpu_cycles,147319304
+utxo_no per transaction: 19400
+CCoinsCaching,cpu_cycles,146168036
+utxo_no per transaction: 19500
+CCoinsCaching,cpu_cycles,147101920
+utxo_no per transaction: 19600
+CCoinsCaching,cpu_cycles,152577480
+utxo_no per transaction: 19700
+CCoinsCaching,cpu_cycles,177387520
+utxo_no per transaction: 19800
+CCoinsCaching,cpu_cycles,151670414
+utxo_no per transaction: 19900
+CCoinsCaching,cpu_cycles,198785580
+utxo_no per transaction: 20000
+CCoinsCaching,cpu_cycles,151102126
+utxo_no per transaction: 20100
+CCoinsCaching,cpu_cycles,216825992
+utxo_no per transaction: 20200
+CCoinsCaching,cpu_cycles,175806630
+utxo_no per transaction: 20300
+CCoinsCaching,cpu_cycles,149742590
+utxo_no per transaction: 20400
+CCoinsCaching,cpu_cycles,270738048
+utxo_no per transaction: 20500
+CCoinsCaching,cpu_cycles,154994812
+utxo_no per transaction: 20600
+CCoinsCaching,cpu_cycles,179307192
+utxo_no per transaction: 20700
+CCoinsCaching,cpu_cycles,154764950
+utxo_no per transaction: 20800
+CCoinsCaching,cpu_cycles,156576682
+utxo_no per transaction: 20900
+CCoinsCaching,cpu_cycles,161199484
+utxo_no per transaction: 21000
+CCoinsCaching,cpu_cycles,181891346
+utxo_no per transaction: 21100
+CCoinsCaching,cpu_cycles,163768556
+utxo_no per transaction: 21200
+CCoinsCaching,cpu_cycles,159702938
+utxo_no per transaction: 21300
+CCoinsCaching,cpu_cycles,158989792
+utxo_no per transaction: 21400
+CCoinsCaching,cpu_cycles,165326764
+utxo_no per transaction: 21500
+CCoinsCaching,cpu_cycles,170047298
+utxo_no per transaction: 21600
+CCoinsCaching,cpu_cycles,164891766
+utxo_no per transaction: 21700
+CCoinsCaching,cpu_cycles,166056076
+utxo_no per transaction: 21800
+CCoinsCaching,cpu_cycles,195155538
+utxo_no per transaction: 21900
+CCoinsCaching,cpu_cycles,168200544
+utxo_no per transaction: 22000
+CCoinsCaching,cpu_cycles,173390622
+utxo_no per transaction: 22100
+CCoinsCaching,cpu_cycles,173417254
+utxo_no per transaction: 22200
+CCoinsCaching,cpu_cycles,175721382
+utxo_no per transaction: 22300
+CCoinsCaching,cpu_cycles,168299762
+utxo_no per transaction: 22400
+CCoinsCaching,cpu_cycles,245744684
+utxo_no per transaction: 22500
+CCoinsCaching,cpu_cycles,177500506
+utxo_no per transaction: 22600
+CCoinsCaching,cpu_cycles,169503492
+utxo_no per transaction: 22700
+CCoinsCaching,cpu_cycles,178738680
+utxo_no per transaction: 22800
+CCoinsCaching,cpu_cycles,223251076
+utxo_no per transaction: 22900
+CCoinsCaching,cpu_cycles,212224328
+utxo_no per transaction: 23000
+CCoinsCaching,cpu_cycles,210717382
+utxo_no per transaction: 23100
+CCoinsCaching,cpu_cycles,227619568
+utxo_no per transaction: 23200
+CCoinsCaching,cpu_cycles,226642452
+utxo_no per transaction: 23300
+CCoinsCaching,cpu_cycles,182627430
+utxo_no per transaction: 23400
+CCoinsCaching,cpu_cycles,193805042
+utxo_no per transaction: 23500
+CCoinsCaching,cpu_cycles,286676588
+utxo_no per transaction: 23600
+CCoinsCaching,cpu_cycles,179850172
+utxo_no per transaction: 23700
+CCoinsCaching,cpu_cycles,180509076
+utxo_no per transaction: 23800
+CCoinsCaching,cpu_cycles,183248274
+utxo_no per transaction: 23900
+CCoinsCaching,cpu_cycles,244844226
+utxo_no per transaction: 24000
+CCoinsCaching,cpu_cycles,191281182
+utxo_no per transaction: 24100
+CCoinsCaching,cpu_cycles,190066140
+utxo_no per transaction: 24200
+CCoinsCaching,cpu_cycles,190528996
+utxo_no per transaction: 24300
+CCoinsCaching,cpu_cycles,203721074
+utxo_no per transaction: 24400
+CCoinsCaching,cpu_cycles,220323994
+utxo_no per transaction: 24500
+CCoinsCaching,cpu_cycles,196456472
+utxo_no per transaction: 24600
+CCoinsCaching,cpu_cycles,191707128
+utxo_no per transaction: 24700
+CCoinsCaching,cpu_cycles,241272134
+utxo_no per transaction: 24800
+CCoinsCaching,cpu_cycles,191211254
+utxo_no per transaction: 24900
+CCoinsCaching,cpu_cycles,242169206
+utxo_no per transaction: 25000
+CCoinsCaching,cpu_cycles,191580224
+utxo_no per transaction: 25100
+CCoinsCaching,cpu_cycles,226615056
+utxo_no per transaction: 25200
+CCoinsCaching,cpu_cycles,207997800
+utxo_no per transaction: 25300
+CCoinsCaching,cpu_cycles,193320796

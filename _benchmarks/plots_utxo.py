@@ -38,41 +38,31 @@ info_list = []
 print("tx_no: %s" % tx_no)
 
 
-for i in range(2, len(lines) - 3, 4):
-    #print(lines[i].split(":"))
-    utxo_no = lines[i].split(":")[-1]
-    cpu_cycles = lines[i+1].split(",")[-1]
-    cache_size = lines[i+2].split(":")[-1]
-    #print("utxo_no: %s, cpu_cycles: %s, cache_size: %s" % (utxo_no, cpu_cycles, cache_size))
+for i in range(2, len(lines) - 3, 2):
+
+    '''
+    if not lines[i].startswith('number') and not lines[i].startswith('CCoinsCaching'):
+	#print(lines[i])
+	continue;
+    '''
+
+    utxo_no = lines[i].split(":")
+    cpu_cycles = lines[i+1].split(",")
+
+    if len(utxo_no) >= 1:
+	utxo_no = utxo_no[-1]
+    if len(cpu_cycles) >= 1:
+	cpu_cycles = cpu_cycles[-1]    
+
+    #print("utxo_no: %s, cpu_cycles: %s" % (utxo_no, cpu_cycles))
     utxo_list.append(int(utxo_no))
     times_list.append(int(cpu_cycles))
-    cache_size_list.append(cache_size)
-    info_list.append(utxo_no + " utxo\n" + cache_size + " B")
-
 
 print("END")
 
-# line1 = ax1.plot(utxo_list, 'o-')
-# # ylabel("-dbcache=300 (default)")
-#
-# # now, the second axes that shares the x-axis with the ax1
-# ax2 = fig1.add_subplot(111, sharex=ax1, frameon=False)
-# line2 = ax2.plot(cache_size_list, 'xr-')
-# ax2.yaxis.tick_right()
-# ax2.yaxis.set_label_position("right")
-# # ylabel("-dbcache=5")
-#
-# # y_line =
-#
-# # for the legend, remember that we used two different axes so, we need
-# # to build the legend manually
-# legend((line1, line2), ("1", "2"))
-# show()
-#
 
+avg_time=reduce(lambda x, y: x + y, times_list) / float(len(times_list))
 
-#x = times_list
-#y = utxo_list
 
 x = utxo_list
 y = times_list
@@ -87,8 +77,23 @@ print (info_list)
 fig = plt.figure(figsize=(15,15))
 ax = plt.subplot(111)
 
+#print the average access time
+ax.text(0.5, 0.9,'avg time='+ `avg_time`, fontsize=20, ha='center', va='center', transform=ax.transAxes,bbox=dict(facecolor='white', alpha=1))
+
 #x=x[1:800]
 #y=y[1:800]
+
+
+#cache compare
+#ax.set_ylim([10400,11500])
+
+#db
+#ax.set_ylim([10000,20000])
+#ax.set_ylim([17000000,22000000])
+#ax.set_ylim([100000,1300000000])
+#ax.set_ylim([100000,800000000])
+#ax.set_ylim([100000,39000000])
+ax.set_ylim([100000,10000000])
 
 ax.plot(x,y)
 ax.scatter(x,y)
@@ -117,12 +122,13 @@ ax.set_xticklabels(info_list) #
 #plt.yticks(info_list)
 
 
-plt.xlabel("CPU cycles")
-plt.ylabel("utxo number\ncache size")
-plt.title("NO Cache Flush")
+plt.xlabel("UTXO number")
+plt.ylabel("CPU cycles")
+plt.title("Sqlite Batch Write")
 # plt.legend((x, y), ("cpu cycles", "UTXO number\ncache size"))
 
 # ax1.set_ylabel('UTXO number\nCache size')
 
 fig.savefig(output)
+
 
