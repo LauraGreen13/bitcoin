@@ -406,7 +406,7 @@ static void CCoinsCaching(benchmark::State& state)
 //				assert(has2 == 0);
 //			}
 //			pcoinsTip->Flush();
-//		}
+		}
 
 //	if (testCache == 0) {
 //				//access coins in db
@@ -448,18 +448,16 @@ static void CCoinsCaching(benchmark::State& state)
 
 	//check everything is flushed to database
 	for (int j = 1; j < dummySize; j++) {
-			CMutableTransaction temp = transactions[j];
-			for (int var = 0; var < temp.vin.size(); var++) {
-				bool has = pcoinsdbview->HaveCoin(temp.vin[var].prevout);
+		CMutableTransaction temp = transactions[j];
+		for (int var = 0; var < temp.vin.size(); var++) {
+			bool has = pcoinsdbview->HaveCoin(temp.vin[var].prevout);
+			bool has2 = pcoinsTip->HaveCoinInCache(temp.vin[var].prevout);
+			assert(has == 1);
+			assert(has2 == 0);
 
-				if (testCache == 1) {
-					assert(has == 0);
-				} else {
-					assert(has == 1);
-				}
-
-			}
 		}
+	}
+
 
     threadGroup.interrupt_all();
     threadGroup.join_all();

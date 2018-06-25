@@ -282,184 +282,116 @@ static void CCoinsCaching(benchmark::State& state)
 
 //	============================= ACTUAL TEST===========================================================
 
-//	FOR FLUSH TEST
+
+	if (testCache == 0) {
+		pcoinsTip->Flush();
+
+	}
+
 	//check everything is NOT flushed to database
 	for (int j = 0; j < dummySize; j++) {
+//		std::cout<< "j = " << j;
 		CMutableTransaction temp = transactions[j];
+
+//		std::cout<< "temp vin size: " << temp.vin.size() << "\n";
 		for (int var = 0; var < temp.vin.size(); var++) {
+//			std::cout<< "var = " << var << "\n";
 			bool has = pcoinsdbview->HaveCoin(temp.vin[var].prevout);
-			bool has2 = pcoinsTip->HaveCoinInCache(temp.vin[var].prevout);
-			assert(has == 0);
-			assert(has2 == 1);
+
+			if (testCache == 0) {
+				//if we don't test the cache, the coin should be in the database
+				assert(has == 1);
+			} else {
+				assert(has == 0);
+			}
+
 		}
 	}
-//
-//
-//
-//
-//	if (testCache == 0) {
-//		pcoinsTip->Flush();
-//	}
-//
-//	//check everything is NOT flushed to database
-//	for (int j = 0; j < dummySize; j++) {
-////		std::cout<< "j = " << j;
-//		CMutableTransaction temp = transactions[j];
-//
-////		std::cout<< "temp vin size: " << temp.vin.size() << "\n";
-//		for (int var = 0; var < temp.vin.size(); var++) {
-////			std::cout<< "var = " << var << "\n";
-//			bool has = pcoinsdbview->HaveCoin(temp.vin[var].prevout);
-//			bool has2 = pcoinsTip->HaveCoinInCache(temp.vin[var].prevout);
-//
-//			if (testCache == 0) {
-//				//if we don't test the cache, the coin should be in the database
-//				assert(has == 1);
-//				assert(has2 == 0);
-//			} else {
-//				assert(has == 0);
-//				assert(has2 == 1);
-//			}
-//
-//		}
-//	}
-////
-////
-////
-////
-////	sysinfo (&memInfo);
-////	long long virtualMemUsed = memInfo.totalram - memInfo.freeram;
-////	//Add other values in next statement to avoid int overflow on right hand side...
-////	virtualMemUsed += memInfo.totalswap - memInfo.freeswap;
-////	virtualMemUsed *= memInfo.mem_unit;
-////
+
+
+
 
 	// Benchmark.
-//	uint64_t nowCycles = perf_cpucycles();
-	clock_t begin = clock();
-
+//	auto start = std::chrono::high_resolution_clock::now();
 	while (state.KeepRunning()) {
-		bool flushed = pcoinsTip->Flush();
-		assert(flushed == 1);
-	}
-
-//
-//
-//			bool has = pcoinsdbview->HaveCoin(t1.vin[var].prevout);
-//			bool has2 = pcoinsTip->HaveCoinInCache(t1.vin[var].prevout);
-//
-//			if (testCache == 0) {
-//				//if we don't test the cache, the coin should be in the database
-//				assert(has == 1);
-//				assert(has2 == 0);
-//			} else {
-//				assert(has == 0);
-//				assert(has2 == 1);
-//			}
-//	std::cout << "threads number: " << threadGroup.size() << "\n";
-//	std::cout << "SQL ThreadSafe: " << sqlite3_threadsafe() << "\n";
-//			while (state.KeepRunning()) {
-//				for (int j = 1; j < dummySize; j++) {
-//					CMutableTransaction t1 = transactions[j];
-//
-////
-////				for (int var = 0; var < t1.vin.size(); var++) {
-////				//			std::cout<< "var = " << var << "\n";
-//////							bool has = pcoinsdbview->HaveCoin(t1.vin[var].prevout);
-//////							bool has2 = pcoinsTip->HaveCoinInCache(t1.vin[var].prevout);
-//////
-//////							if (testCache == 0) {
-//////								//if we don't test the cache, the coin should be in the database
-//////								assert(has == 1);
-//////								assert(has2 == 0);
-//////							} else {
-//////								assert(has == 0);
-//////								assert(has2 == 1);
-//////							}
-//////
-////					pcoinsTip->Uncache(t1.vin[var].prevout);
-////					bool has2 = pcoinsTip->HaveCoinInCache(t1.vin[var].prevout);
-////					assert(has2 == 0);
-////				}
-//
-//				CAmount value = pcoinsTip->GetValueIn(t1);
-//			}
-//
-
-//
-//			for (int var = 0; var < t1.vin.size(); var++) {
-//			//			std::cout<< "var = " << var << "\n";
-////							bool has = pcoinsdbview->HaveCoin(t1.vin[var].prevout);
-////							bool has2 = pcoinsTip->HaveCoinInCache(t1.vin[var].prevout);
-////
-////							if (testCache == 0) {
-////								//if we don't test the cache, the coin should be in the database
-////								assert(has == 1);
-////								assert(has2 == 0);
-////							} else {
-////								assert(has == 0);
-////								assert(has2 == 1);
-////							}
-////
-//				pcoinsTip->Uncache(t1.vin[var].prevout);
-//				bool has2 = pcoinsTip->HaveCoinInCache(t1.vin[var].prevout);
-//				assert(has2 == 0);
-//			}
-//			pcoinsTip->Flush();
-//		}
-
-//	if (testCache == 0) {
-//				//access coins in db
-//				for (int j = 1; j < dummySize; j++) {
-//					CMutableTransaction temp = transactions[j];
-//					for (int var = 0; var < temp.vin.size(); var++) {
-//						bool has = pcoinsdbview->HaveCoin(temp.vin[var].prevout);
-////							bool has2 = pcoinsTip->HaveCoinInCache(temp.vin[var].prevout);
-//						assert(has == 1);
-////							assert(has2 == 0);
-//					}
-//				}
-//
-//			} else {
-//				//access coins in cache
-//				for (int j = 1; j < dummySize; j++) {
-//					CMutableTransaction temp = transactions[j];
-//					for (int var = 0; var < temp.vin.size(); var++) {
-//						bool has = pcoinsdbview->HaveCoin(temp.vin[var].prevout);
-////							bool has2 = pcoinsTip->HaveCoinInCache(temp.vin[var].prevout);
-//						assert(has == 0);
-////							assert(has2 == 1);
-//					}
-//				}
-//
-//			}
-//
-//
-//
-//	clock_t end = clock();
-//	double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-//
-
-//	uint64_t endCycles = perf_cpucycles() - nowCycles;
-//	std::cout << "CCoinsCaching:Time taken by function," << endCycles << "\n";
 
 
-//	FOR FLUSH TEST:
+	if (testCache == 0) {
 
-	//check everything is flushed to database
-	for (int j = 1; j < dummySize; j++) {
+		//access coins in db
+		for (int j = 1; j < dummySize; j++) {
 			CMutableTransaction temp = transactions[j];
 			for (int var = 0; var < temp.vin.size(); var++) {
-				bool has = pcoinsdbview->HaveCoin(temp.vin[var].prevout);
+//				bool has = pcoinsdbview->HaveCoin(temp.vin[var].prevout);
+				bool has = pcoinsTip->HaveCoin(temp.vin[var].prevout);
 
-				if (testCache == 1) {
-					assert(has == 0);
-				} else {
-					assert(has == 1);
-				}
+				assert(has == 1);
+
+			}
+
+
+//
+//			CMutableTransaction tx = transactions[j];
+//
+//
+//
+//					for (const CTxIn& txin : tx.vin) {
+//			//			indexed_transaction_set::const_iterator it2 = mapTx.find(txin.prevout.hash);
+//			//			if (it2 != mapTx.end())
+//			//				continue;
+//						Coin coin;// = pcoinsTip->AccessCoin(txin.prevout);
+//
+//						bool has = pcoinsdbview->GetCoin(txin.prevout, coin);
+//
+//						assert(has == 1);
+//
+//
+//					}
+
+
+		}
+
+	} else {
+
+		//access coins in cache
+		for (int j = 1; j < dummySize; j++) {
+			CMutableTransaction temp = transactions[j];
+			for (int var = 0; var < temp.vin.size(); var++) {
+				bool has = pcoinsTip->HaveCoinInCache(temp.vin[var].prevout);
+
+				assert(has == 1);
 
 			}
 		}
+
+	}
+
+
+
+	}
+
+//	auto stop = std::chrono::high_resolution_clock::now();
+	//duration_cast<microseconds>
+//	auto duration = (stop - start);
+
+//	std::cout << "0.Time taken by function: " << duration.count() << " microseconds\n\n";
+
+	//check everything is flushed to database
+	for (int j = 1; j < dummySize; j++) {
+		CMutableTransaction temp = transactions[j];
+		for (int var = 0; var < temp.vin.size(); var++) {
+			bool has = pcoinsdbview->HaveCoin(temp.vin[var].prevout);
+
+			if (testCache == 1) {
+				assert(has == 0);
+			} else {
+				assert(has == 1);
+			}
+
+		}
+	}
+
+
 
     threadGroup.interrupt_all();
     threadGroup.join_all();
